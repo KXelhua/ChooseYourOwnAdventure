@@ -29,6 +29,10 @@ var game = {
                     text: "Start over",
                     nextLevel: "start",
                 },
+                {
+                    text: "Keep on moving",
+                    nextLevel: "park",
+                },
             ]
         },
 
@@ -41,6 +45,24 @@ var game = {
                 },
             ]
         },
+        
+        park: {
+            background_image:"https://data.whicdn.com/images/185429502/original.gif",
+            message: "You come across a dark cave",
+            choices: [
+                {
+                    text: "Enter the cave",
+                    nextLevel: "cave",
+                },
+
+                {
+                    text: "Keep on moving",
+                    nextLevel: "field",
+                },
+            ]
+        },
+        
+        
 
     }
 };
